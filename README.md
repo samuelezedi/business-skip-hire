@@ -30,40 +30,6 @@ My approach to this challenge involved the following steps:
 
 7.  **Code Structure and Maintainability:** The project structure was organized logically, separating components, hooks, API interactions, and types into dedicated folders within the `src` directory. TypeScript was used throughout the project to enforce type safety and improve code readability.
 
-## Project Structure
-├── .gitignore
-├── index.html
-├── package-lock.json
-├── package.json
-├── postcss.config.js
-├── src
-│   ├── App.tsx
-│   ├── api
-│   │   ├── client.ts
-│   │   └── skip.ts
-│   ├── assets
-│   ├── components
-│   │   ├── BottomBar.tsx
-│   │   ├── ErrorCard.tsx
-│   │   ├── LoaderIcon.tsx
-│   │   ├── PageHeader.tsx
-│   │   ├── PageSubtitle.tsx
-│   │   ├── ProgressBar.tsx
-│   │   └── SkipList.tsx
-│   ├── hooks
-│   │   └── useSkips.ts
-│   ├── main.tsx
-│   ├── SelectSkip.tsx
-│   ├── styles
-│   │   └── globals.css
-│   ├── types
-│   │   ├── index.ts
-│   │   └── skip.ts
-│   └── vite-env.d.ts
-├── tailwind.config.js
-├── tsconfig.json
-├── tsconfig.node.json
-└── vite.config.ts
 
 ## How to Run
 
