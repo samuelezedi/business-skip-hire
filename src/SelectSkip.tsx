@@ -27,7 +27,7 @@ function SelectSkip() {
             <ErrorCard />
           ) : (
             <SkipList
-              onSelect={(id) => setSelectedSkip(id)}
+              onSelect={(skip) => setSelectedSkip(skip)}
               selectedCardId={selectedSkip?.id ?? 0}
               skips={skips || []}
             />
