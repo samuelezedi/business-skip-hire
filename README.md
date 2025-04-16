@@ -35,8 +35,8 @@ My approach to this challenge involved the following steps:
 
 1.  Clone the repository:
     ```bash
-    git clone [Your Public GitHub Repository Link Here]
-    cd [repository-name]
+    git clone https://github.com/samuelezedi/business-skip-hire
+    cd business-skip-hire
     ```
 2.  Install dependencies:
     ```bash
