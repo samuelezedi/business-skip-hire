@@ -32,7 +32,7 @@ const SkipList: React.FC<SkipList> = ({ skips, onSelect, selectedCardId }) => (
         <CardSubtitle title={`${data.hire_period_days} day hire period`} />
 
         <CardAmount amount={`£${data.price_before_vat}`} />
-        <CardButton text="Select This Skip" selected={selectedCardId === data.id}>
+        <CardButton onClick={() => onSelect(data)} text="Select This Skip" selected={selectedCardId === data.id}>
           <IconPicker name="ArrowRight" size={17} />
         </CardButton>
       </Card>
