@@ -14,7 +14,7 @@ interface SkipList {
 }
 
 const SkipList: React.FC<SkipList> = ({ skips, onSelect, selectedCardId }) => (
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-7">
     {skips?.map((data) => (
       <Card
         key={data.id}
@@ -27,14 +27,19 @@ const SkipList: React.FC<SkipList> = ({ skips, onSelect, selectedCardId }) => (
           imageTitle={`${data.size} Yards`}
           notAllowedOnRoad={!data.allowed_on_road}
         />
+        <div className="p-4 md:p-6">
+          <CardTitle title={`${data.size} Yard Skip`} />
+          <CardSubtitle title={`${data.hire_period_days} day hire period`} />
 
-        <CardTitle title={`${data.size} Yard Skip`} />
-        <CardSubtitle title={`${data.hire_period_days} day hire period`} />
-
-        <CardAmount amount={`£${data.price_before_vat}`} />
-        <CardButton onClick={() => onSelect(data)} text="Select This Skip" selected={selectedCardId === data.id}>
-          <IconPicker name="ArrowRight" size={17} />
-        </CardButton>
+          <CardAmount amount={`£${data.price_before_vat}`} />
+          <CardButton
+            onClick={() => onSelect(data)}
+            text="Select This Skip"
+            selected={selectedCardId === data.id}
+          >
+            <IconPicker name="ArrowRight" size={17} />
+          </CardButton>
+        </div>
       </Card>
     ))}
   </div>

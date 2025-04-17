@@ -68,20 +68,20 @@ export default function ProgressBar() {
               <></>
             ) : (
               <button
-                className={` flex justify-center items-center whitespace-nowrap transition-colors gap-3  text-[#0037C1] ${
+                className={` flex justify-center items-center whitespace-nowrap transition-colors gap-3  text-[#FF5733] ${
                   data.completed || data.current
                     ? "cursor-pointer"
                     : "cursor-not-allowed"
-                } hover:text-[#0037C1] `}
+                } hover:text-[#FF5733] `}
               >
                 <IconPicker
                   name={data.iconName}
-                  color={data.completed || data.current ? "#0037C1" : "#595959"}
+                  color={data.completed || data.current ? "#FF5733" : "#595959"}
                 />
                 <span
                   className={`${
                     data.completed || data.current
-                      ? "text-white font-medium"
+                      ? "text-textColor font-medium"
                       : "text-[#898989]"
                   } `}
                 >
@@ -117,20 +117,20 @@ export default function ProgressBar() {
             <button
               className={`${
                 !data.current ? "hidden" : "flex"
-              } lg:flex items-center whitespace-nowrap transition-colors text-[#0037C1] ${
+              } lg:flex items-center whitespace-nowrap transition-colors text-[#FF5733] ${
                 data.completed || data.current
                   ? "cursor-pointer"
                   : "cursor-not-allowed"
-              } hover:text-[#0037C1] `}
+              } hover:text-[#FF5733] `}
             >
               <IconPicker
                 name={data.iconName}
-                color={data.completed || data.current ? "#0037C1" : "#595959"}
+                color={data.completed || data.current ? "#FF5733" : "#595959"}
               />
               <span
-                className={`ml-2 ${
+                className={`ml-3 ${
                   data.completed || data.current
-                    ? "text-white font-medium"
+                    ? "text-textColor font-medium"
                     : "text-[#898989]"
                 } `}
               >

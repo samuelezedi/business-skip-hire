@@ -13,12 +13,12 @@ const CardButton: React.FC<CardButtonProps> = ({
 }) => (
   <button
     onClick={onClick}
-    className={`w-full py-2.5 md:py-3 px-4 rounded-md transition-all flex items-center justify-center space-x-2
+    className={`w-full py-2.5 md:py-3 px-4  transition-all flex items-center justify-center space-x-2
           ${
             selected
-              ? "bg-[#0037C1]"
-              : "bg-[#2A2A2A] hover:bg-[#3A3A3A] hover:border-[#0037C1]"
-          }  text-white 
+              ? "bg-[#FF5733] text-white"
+              : "bg-white  hover:bg-[#FF5733] hover:text-white hover:border-[#FF5733]"
+          }  text-[#FF5733] border border-[#FF5733]
           false`}
   >
     <span>{text}</span>

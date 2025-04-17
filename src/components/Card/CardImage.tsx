@@ -15,9 +15,9 @@ const CardImage: React.FC<CardImageProps> = ({
     <img
       src={imageUrl}
       alt={imageAlt}
-      className="w-full h-36 md:h-48 object-cover rounded-md mb-4"
+      className="w-full h-36 md:h-48 object-cover "
     />
-    <div className="absolute top-3 right-2 z-20 bg-[#0037C1] text-white px-3 py-1 rounded-full text-sm font-medium shadow-md">
+    <div className="absolute top-3 right-0 z-20 bg-[#FF5733] bg-opacity-90 text-white px-3 py-1  text-sm font-medium shadow-md">
       {imageTitle}
     </div>
     {notAllowedOnRoad ? (

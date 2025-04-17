@@ -7,11 +7,11 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ onClick, selected, children }) => (
   <div
     onClick={onClick}
-    className={`group relative rounded-lg border-2 p-4 md:p-6 transition-all
+    className={`group relative border-2 transition-all overflow-hidden
         ${
-          selected ? "border-appBlue" : "border-[#2A2A2A] hover:border-[#0037C1]/50"
+          selected ? "border-appBlue" : "border-[#898989] border-opacity-10 hover:border-[#FF5733]/30"
         } 
-        bg-[#1C1C1C] text-white cursor-pointer`}
+        bg-white shadow-lg text-white cursor-pointer`}
   >
     {children}
   </div>

@@ -4,17 +4,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: 'hsl(0, 0%, 7%)', 
+        background: 'hsl(0, 0%, 99%)', 
         topBackground: 'hsl(0, 0%, 11%)',
         surfaceBackground: 'hsl(0, 0%, 16%)',
-        appBlue: "hsl(223, 99%, 38%)",
+        appBlue: "hsl(11, 80%, 60%)",
         textHoverColor: 'hsl(0, 0%, 33%)',
-        textColor: 'hsl(0, 0%, 99%)',
+        textColor: 'hsl(0, 0%, 11%)',
         subtitleColor: 'hsl(225, 3%, 46%)',
         disabledTextColor: 'hsl(0, 0%, 41%)'
       },
       fontFamily: {
-        inter: ['Inter', 'sans-serif'],
+        inter: ['Rubik', 'sans-serif'],
       },
     },
   },
